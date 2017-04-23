@@ -7,15 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		68289C4F1EAD0D2D0020ECFB /* OverlayTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68289C4E1EAD0D2D0020ECFB /* OverlayTestViewController.swift */; };
+		68289C531EAD14D20020ECFB /* ExamplesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68289C521EAD14D20020ECFB /* ExamplesTableViewController.swift */; };
 		685A703F1EA26EF5009A3206 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685A703E1EA26EF5009A3206 /* AppDelegate.swift */; };
 		685A70441EA26EF5009A3206 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 685A70421EA26EF5009A3206 /* Main.storyboard */; };
 		685A70461EA26EF5009A3206 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 685A70451EA26EF5009A3206 /* Assets.xcassets */; };
 		685A70491EA26EF5009A3206 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 685A70471EA26EF5009A3206 /* LaunchScreen.storyboard */; };
 		685A70511EA27258009A3206 /* OverlappingScrollsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685A70501EA27258009A3206 /* OverlappingScrollsViewController.swift */; };
 		685A70531EA28C87009A3206 /* PassThruScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685A70521EA28C87009A3206 /* PassThruScrollView.swift */; };
+		685A70571EACF172009A3206 /* PassThruOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685A70561EACF172009A3206 /* PassThruOverlayView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		68289C4E1EAD0D2D0020ECFB /* OverlayTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverlayTestViewController.swift; sourceTree = "<group>"; };
+		68289C521EAD14D20020ECFB /* ExamplesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExamplesTableViewController.swift; sourceTree = "<group>"; };
 		685A703B1EA26EF5009A3206 /* ScollViewPassThru.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScollViewPassThru.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		685A703E1EA26EF5009A3206 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		685A70431EA26EF5009A3206 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -24,6 +29,7 @@
 		685A704A1EA26EF5009A3206 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		685A70501EA27258009A3206 /* OverlappingScrollsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverlappingScrollsViewController.swift; sourceTree = "<group>"; };
 		685A70521EA28C87009A3206 /* PassThruScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PassThruScrollView.swift; sourceTree = "<group>"; };
+		685A70561EACF172009A3206 /* PassThruOverlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PassThruOverlayView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +43,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		68289C501EAD0DAD0020ECFB /* Overlapping ScrollViews */ = {
+			isa = PBXGroup;
+			children = (
+				685A70501EA27258009A3206 /* OverlappingScrollsViewController.swift */,
+				685A70521EA28C87009A3206 /* PassThruScrollView.swift */,
+			);
+			name = "Overlapping ScrollViews";
+			sourceTree = "<group>";
+		};
+		68289C511EAD0DBB0020ECFB /* UIView Overlaying ScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				68289C4E1EAD0D2D0020ECFB /* OverlayTestViewController.swift */,
+				685A70561EACF172009A3206 /* PassThruOverlayView.swift */,
+			);
+			name = "UIView Overlaying ScrollView";
+			sourceTree = "<group>";
+		};
 		685A70321EA26EF5009A3206 = {
 			isa = PBXGroup;
 			children = (
@@ -57,12 +81,13 @@
 			isa = PBXGroup;
 			children = (
 				685A703E1EA26EF5009A3206 /* AppDelegate.swift */,
+				68289C521EAD14D20020ECFB /* ExamplesTableViewController.swift */,
 				685A70421EA26EF5009A3206 /* Main.storyboard */,
 				685A70451EA26EF5009A3206 /* Assets.xcassets */,
 				685A70471EA26EF5009A3206 /* LaunchScreen.storyboard */,
 				685A704A1EA26EF5009A3206 /* Info.plist */,
-				685A70501EA27258009A3206 /* OverlappingScrollsViewController.swift */,
-				685A70521EA28C87009A3206 /* PassThruScrollView.swift */,
+				68289C501EAD0DAD0020ECFB /* Overlapping ScrollViews */,
+				68289C511EAD0DBB0020ECFB /* UIView Overlaying ScrollView */,
 			);
 			path = ScollViewPassThru;
 			sourceTree = "<group>";
@@ -141,6 +166,9 @@
 			files = (
 				685A70511EA27258009A3206 /* OverlappingScrollsViewController.swift in Sources */,
 				685A703F1EA26EF5009A3206 /* AppDelegate.swift in Sources */,
+				68289C531EAD14D20020ECFB /* ExamplesTableViewController.swift in Sources */,
+				685A70571EACF172009A3206 /* PassThruOverlayView.swift in Sources */,
+				68289C4F1EAD0D2D0020ECFB /* OverlayTestViewController.swift in Sources */,
 				685A70531EA28C87009A3206 /* PassThruScrollView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -303,6 +331,7 @@
 				685A704F1EA26EF5009A3206 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
